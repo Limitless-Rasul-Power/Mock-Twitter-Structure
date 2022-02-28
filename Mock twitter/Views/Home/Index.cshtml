@@ -1,0 +1,22 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    
+        <form method="post" class="w-50 m-auto">
+            <label asp-for="Email"></label>
+            <input type="email" asp-for="Email" class="form-control" />
+
+            <label asp-for="Password"></label>
+            <input type="password" asp-for="Password" class="form-control" />
+
+            <input type="submit" value="Log in" class="btn btn-success mt-3" />
+        </form>
+    
+
+</div>
